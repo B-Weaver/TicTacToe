@@ -1,4 +1,4 @@
-//package edu.jsu.mcis;
+package edu.jsu.mcis;
 
 public class TicTacToeModel{
 	public enum Mark {EMPTY, X, O};
@@ -36,15 +36,24 @@ public class TicTacToeModel{
 		
     }
 	
+	public String getMark(int r, int c){
+		String m = "";
+		if(grid[r][c] == Mark.X) m = r + " " + c + " " + "X";
+        else if(grid[r][c] == Mark.O) m = r + " " + c + " " + "O";
+        else m = r + " " + c + " " + " ";
+		
+		return m;
+	}
+	
 	public String resultString(){
 		Result result = getResult();
 		String r = "";
 		if(result == Result.XWINS)
-			r = "Player X Wins!";
+			r = "X";
 		else if(result == Result.OWINS)
-			r = "Player O WINS!";
+			r = "O";
 		else if(result == Result.TIE)
-			r = "It's a Tie!";
+			r = "TIE";
 		else
 			r = "NONE";
 		
