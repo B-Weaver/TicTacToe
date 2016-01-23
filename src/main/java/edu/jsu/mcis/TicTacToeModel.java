@@ -29,18 +29,16 @@ public class TicTacToeModel{
                 xTurn = !xTurn;
             }
         }
-        else {
-			System.out.println("Invalid input");
-		}
+        
 		
 		
     }
 	
 	public String getMark(int r, int c){
 		String m = "";
-		if(grid[r][c] == Mark.X) m = r + " " + c + " " + "X";
-        else if(grid[r][c] == Mark.O) m = r + " " + c + " " + "O";
-        else m = r + " " + c + " " + " ";
+		if(grid[r][c] == Mark.X) m = "X";
+        else if(grid[r][c] == Mark.O) m = "O";
+        else m = " ";
 		
 		return m;
 	}
@@ -135,8 +133,4 @@ public class TicTacToeModel{
         return s;
     }
     
-    public int getTurn() {
-        if(xTurn) return 0;
-        else return 1;
-    }
 }

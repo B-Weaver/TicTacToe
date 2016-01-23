@@ -13,7 +13,9 @@ public class TicTacToeKeywords {
 	
 	public String getMark(int row, int col) {
 		String m = game.getMark(row, col);
-		return m;
+		if(m == "X") return "X";
+		else if (m == "O") return "O";
+		else return m;
 	}
     
 	public String getWinner() {

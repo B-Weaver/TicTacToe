@@ -3,7 +3,7 @@ package edu.jsu.mcis;
 import java.util.*;
 
 public class TicTacToe {
-		private TicTacToeModel game;
+		protected TicTacToeModel game;
 		private int turn;
 		private int row;
 		private int col;
@@ -23,8 +23,7 @@ public class TicTacToe {
 			System.out.println("Welcome to TicTacToe.");
 			
 			Scanner choice = new Scanner(System.in);
-			
-			while(game.resultString().equals("NONE")){
+			 
 				if(game.xTurn) turn = 0;
 				else turn = 1;
 				
@@ -41,7 +40,7 @@ public class TicTacToe {
 					System.out.println(game.resultString());
 				
 			}
-		}
+		
 			
 			
 public static void main(String[] args) {
