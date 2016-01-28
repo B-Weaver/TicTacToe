@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="edu.jsu.mcis.TicTacToeTest" tests="16" skipped="0" failures="0" errors="0" timestamp="2016-01-28T08:37:26" hostname="Barry-Laptop" time="0.375">
+<testsuite name="edu.jsu.mcis.TicTacToeTest" tests="16" skipped="0" failures="0" errors="0" timestamp="2016-01-28T08:57:10" hostname="Barry-Laptop" time="0.41">
   <properties/>
-  <testcase name="testGameIsWonByODiagonallyLeftToRight" classname="edu.jsu.mcis.TicTacToeTest" time="0.011"/>
-  <testcase name="newGameIsCreated" classname="edu.jsu.mcis.TicTacToeTest" time="0.305"/>
-  <testcase name="testGameIsOverByTieIfAllLocationsAreFilled" classname="edu.jsu.mcis.TicTacToeTest" time="0.002"/>
-  <testcase name="testGameIsWonByXDiagonallyRightToLeft" classname="edu.jsu.mcis.TicTacToeTest" time="0.003"/>
+  <testcase name="testGameIsWonByODiagonallyLeftToRight" classname="edu.jsu.mcis.TicTacToeTest" time="0.019"/>
+  <testcase name="newGameIsCreated" classname="edu.jsu.mcis.TicTacToeTest" time="0.334"/>
+  <testcase name="testGameIsOverByTieIfAllLocationsAreFilled" classname="edu.jsu.mcis.TicTacToeTest" time="0.001"/>
+  <testcase name="testGameIsWonByXDiagonallyRightToLeft" classname="edu.jsu.mcis.TicTacToeTest" time="0.002"/>
   <testcase name="testGameIsWonByXHorizontallyAcrossTopRow" classname="edu.jsu.mcis.TicTacToeTest" time="0.0"/>
-  <testcase name="testGameIsWonByOHorizontallyAcrossBottomRow" classname="edu.jsu.mcis.TicTacToeTest" time="0.001"/>
-  <testcase name="testGameIsWonByOVerticallyDownRightColumn" classname="edu.jsu.mcis.TicTacToeTest" time="0.0"/>
-  <testcase name="testGameIsWonByODiagonallyRightToLeft" classname="edu.jsu.mcis.TicTacToeTest" time="0.001"/>
-  <testcase name="testMarkXInUpperRightCorner" classname="edu.jsu.mcis.TicTacToeTest" time="0.002"/>
-  <testcase name="testGameIsWonByXVerticallyDownLeftColumn" classname="edu.jsu.mcis.TicTacToeTest" time="0.001"/>
-  <testcase name="testMarkOInBottomLeftCorner" classname="edu.jsu.mcis.TicTacToeTest" time="0.002"/>
-  <testcase name="testInitialBoardIsEmpty" classname="edu.jsu.mcis.TicTacToeTest" time="0.001"/>
-  <testcase name="testGameIsWonByXDiagonallyLeftToRight" classname="edu.jsu.mcis.TicTacToeTest" time="0.002"/>
+  <testcase name="testGameIsWonByOHorizontallyAcrossBottomRow" classname="edu.jsu.mcis.TicTacToeTest" time="0.002"/>
+  <testcase name="testGameIsWonByOVerticallyDownRightColumn" classname="edu.jsu.mcis.TicTacToeTest" time="0.002"/>
+  <testcase name="testGameIsWonByODiagonallyRightToLeft" classname="edu.jsu.mcis.TicTacToeTest" time="0.0"/>
+  <testcase name="testMarkXInUpperRightCorner" classname="edu.jsu.mcis.TicTacToeTest" time="0.001"/>
+  <testcase name="testGameIsWonByXVerticallyDownLeftColumn" classname="edu.jsu.mcis.TicTacToeTest" time="0.0"/>
+  <testcase name="testMarkOInBottomLeftCorner" classname="edu.jsu.mcis.TicTacToeTest" time="0.005"/>
+  <testcase name="testInitialBoardIsEmpty" classname="edu.jsu.mcis.TicTacToeTest" time="0.002"/>
+  <testcase name="testGameIsWonByXDiagonallyLeftToRight" classname="edu.jsu.mcis.TicTacToeTest" time="0.001"/>
   <testcase name="testAllLocationsAreFilled" classname="edu.jsu.mcis.TicTacToeTest" time="0.003"/>
   <testcase name="testGameIsNotOverAfterTheFirstMark" classname="edu.jsu.mcis.TicTacToeTest" time="0.002"/>
-  <testcase name="testUnableToMarkOverExistingMark" classname="edu.jsu.mcis.TicTacToeTest" time="0.003"/>
+  <testcase name="testUnableToMarkOverExistingMark" classname="edu.jsu.mcis.TicTacToeTest" time="0.004"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
