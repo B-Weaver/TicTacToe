@@ -1,52 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>TicTacToe.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">TicTacToe</a> &gt; <a href="index.source.html" class="el_package">edu.jsu.mcis</a> &gt; <span class="el_source">TicTacToe.java</span></div><h1>TicTacToe.java</h1><pre class="source lang-java linenums">package edu.jsu.mcis;
 
 import java.util.*;
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
 
-public class TicTacToe {
+
+public class TicTacToe extends JPanel implements ActionListener {
+
 		protected TicTacToeModel game;
+		private JButton[][] gridButtons;
+		private JLabel messageLabel;
+		private JPanel board;
+		
 		private int turn;
 		private int row;
 		private int col;
 		private String[] player;
 		
-<span class="fc" id="L12">		public TicTacToe(){</span>
-<span class="fc" id="L13">			game = new TicTacToeModel();</span>
-<span class="fc" id="L14">			player = new String[2];</span>
-<span class="fc" id="L15">			player[0] = &quot;Player X&quot;;</span>
-<span class="fc" id="L16">			player[1] = &quot;Player O&quot;;</span>
-<span class="fc" id="L17">			turn = 0;</span>
-<span class="fc" id="L18">			row = 0;</span>
-<span class="fc" id="L19">			col = 0;</span>
-<span class="fc" id="L20">		}</span>
-		
-		public void runGame(){
-<span class="nc" id="L23">			System.out.println(&quot;Welcome to TicTacToe.&quot;);</span>
+<span class="fc" id="L21">		public TicTacToe(){</span>
+<span class="fc" id="L22">			game = new TicTacToeModel();</span>
+<span class="fc" id="L23">			board = new JPanel();</span>
+<span class="fc" id="L24">			messageLabel = new JLabel(&quot;X make your move&quot;);</span>
+<span class="fc" id="L25">			gridButtons = new JButton[3][3];</span>
 			
-<span class="nc" id="L25">			Scanner choice = new Scanner(System.in);</span>
-			 
-<span class="nc bnc" id="L27" title="All 2 branches missed.">				if(game.xTurn) turn = 0;</span>
-<span class="nc" id="L28">				else turn = 1;</span>
-				
-<span class="nc" id="L30">				System.out.println(player[turn] + &quot; choose a row 1-3.&quot;);</span>
-<span class="nc" id="L31">				row = choice.nextInt();</span>
-<span class="nc" id="L32">				System.out.println(player[turn] + &quot; choose a column 1-3.&quot;);</span>
-<span class="nc" id="L33">				col = choice.nextInt();</span>
-				
-<span class="nc" id="L35">				game.setMark(row-1, col-1);</span>
-				
-<span class="nc" id="L37">				System.out.print(&quot;\n\n&quot; + game.toString() + &quot;\n\n&quot;);</span>
-				
-<span class="nc bnc" id="L39" title="All 2 branches missed.">				if(!game.resultString().equals(&quot;NONE&quot;))</span>
-<span class="nc" id="L40">					System.out.println(game.resultString());</span>
-				
-<span class="nc" id="L42">			}</span>
+<span class="fc" id="L27">			board.setLayout(new GridLayout(3, 3));</span>
+			
+<span class="fc bfc" id="L29" title="All 2 branches covered.">			for(int i = 0; i &lt; 3; i++){</span>
+<span class="fc bfc" id="L30" title="All 2 branches covered.">				for(int j = 0; j &lt; 3; j++){</span>
+<span class="fc" id="L31">					gridButtons[i][j] = new JButton(&quot; &quot;);</span>
+<span class="fc" id="L32">					gridButtons[i][j].setFont(new Font(&quot;&quot;,Font.BOLD, 30));</span>
+<span class="fc" id="L33">					gridButtons[i][j].setPreferredSize(new Dimension(75, 75));</span>
+<span class="fc" id="L34">					gridButtons[i][j].addActionListener(this);</span>
+<span class="fc" id="L35">					gridButtons[i][j].setActionCommand(i + &quot;&quot; + j);</span>
+<span class="fc" id="L36">					board.add(gridButtons[i][j]);</span>
+				}
+			}
+			
+<span class="fc" id="L40">			board.setSize(600, 600);</span>
+<span class="fc" id="L41">			add(board);</span>
+			
+<span class="fc" id="L43">			messageLabel.setPreferredSize(new Dimension(300, 100));</span>
+<span class="fc" id="L44">			messageLabel.setFont(new Font(&quot;&quot;,Font.BOLD, 22));</span>
+<span class="fc" id="L45">			messageLabel.setVerticalAlignment(SwingConstants.CENTER);</span>
+<span class="fc" id="L46">			messageLabel.setHorizontalAlignment(SwingConstants.CENTER);</span>
+<span class="fc" id="L47">			add(messageLabel);</span>
+			
+<span class="fc" id="L49">			player = new String[2];</span>
+<span class="fc" id="L50">			player[0] = &quot;Player X&quot;;</span>
+<span class="fc" id="L51">			player[1] = &quot;Player O&quot;;</span>
+			
+<span class="fc" id="L53">		}</span>
+		
+		public void actionPerformed(ActionEvent e){
+<span class="nc" id="L56">			JButton b = (JButton)e.getSource();</span>
+<span class="nc" id="L57">			int r = Integer.parseInt(b.getActionCommand().substring(0, 1));</span>
+<span class="nc" id="L58">			int c = Integer.parseInt(b.getActionCommand().substring(1, 2));</span>
+			
+<span class="nc" id="L60">			game.setMark(r, c);</span>
+<span class="nc" id="L61">			b.setText(game.getMark(r, c));</span>
+<span class="nc bnc" id="L62" title="All 2 branches missed.">			if(game.xTurn){</span>
+<span class="nc" id="L63">				messageLabel.setText(&quot;Player X make your move&quot;);</span>
+			}
+			else
+<span class="nc" id="L66">				messageLabel.setText(&quot;Player O make your move&quot;);</span>
+			
+<span class="nc bnc" id="L68" title="All 2 branches missed.">			if(game.resultString().equals(&quot;X&quot;)){</span>
+<span class="nc" id="L69">				messageLabel.setText(&quot;Payer X WINS!&quot;);</span>
+<span class="nc" id="L70">				disableButtons();</span>
+			}
+			
+<span class="nc bnc" id="L73" title="All 2 branches missed.">			else if(game.resultString().equals(&quot;O&quot;)){</span>
+<span class="nc" id="L74">				messageLabel.setText(&quot;Player O WINS!&quot;);</span>
+<span class="nc" id="L75">				disableButtons();</span>
+			}
+
+<span class="nc bnc" id="L78" title="All 2 branches missed.">			else if(game.resultString().equals(&quot;TIE&quot;)){</span>
+<span class="nc" id="L79">				messageLabel.setText(&quot;Game ends in a TIE!&quot;);</span>
+<span class="nc" id="L80">				disableButtons();</span>
+			}	
+			
+<span class="nc" id="L83">		}</span>
+		 public void disableButtons(){
+<span class="nc bnc" id="L85" title="All 2 branches missed.">			for(int i = 0; i &lt; 3; i++){</span>
+<span class="nc bnc" id="L86" title="All 2 branches missed.">				for(int j = 0; j &lt; 3; j++){</span>
+<span class="nc" id="L87">					gridButtons[i][j].setEnabled(false);</span>
+				}
+			}
+<span class="nc" id="L90">		 }</span>
 		
 			
 			
 public static void main(String[] args) {
-<span class="nc" id="L47">		TicTacToe newGame = new TicTacToe();</span>
-<span class="nc" id="L48">		newGame.runGame();</span>
-		
-<span class="nc" id="L50">	}</span>
+
+<span class="nc" id="L96">		JFrame win = new JFrame();</span>
+<span class="nc" id="L97">		win.setTitle(&quot;Tic Tac Toe&quot;);</span>
+<span class="nc" id="L98">		win.setSize(400, 400);</span>
+<span class="nc" id="L99">		win.add(new TicTacToe());</span>
+<span class="nc" id="L100">		win.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);</span>
+<span class="nc" id="L101">		win.setVisible(true);</span>
+
+<span class="nc" id="L103">	}</span>
 }
+
 </pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.1.201405082137</span></div></body></html>

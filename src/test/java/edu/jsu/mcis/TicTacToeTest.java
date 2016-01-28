@@ -10,7 +10,6 @@ public class TicTacToeTest {
 	@Test
 	public void newGameIsCreated() {
 		TicTacToe newGame = new TicTacToe();
-		//newGame.runGame();
 		newGame.game.setMark(1, 1);
 		newGame.game.setMark(0, 0);
 		boolean t = false;

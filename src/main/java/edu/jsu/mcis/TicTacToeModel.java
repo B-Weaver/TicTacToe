@@ -118,7 +118,7 @@ public class TicTacToeModel{
         return true;
     }
     
-    public String toString() {
+	public String toString() {
         String s = "";
         for(int i = 0; i < 3; i++) {
 			if(i == 1 || i == 2) s += "---------\n";

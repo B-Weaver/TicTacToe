@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 2.9 (Jython 2.7.0 on java1.8.0_60)" generated="20160122 23:10:24.496">
+<robot generator="Robot 2.9 (Jython 2.7.0 on java1.8.0_60)" generated="20160128 02:24:36.858">
 <suite source="C:\Users\Barry\CS310\TicTacToe\acceptance\TicTacToeTests.txt" name="TicTacToeTests" id="s1">
 <test name="Win Diagonally as X" id="s1-t1">
 <kw library="TicTacToeKeywords" name="Start New Game">
-<status endtime="20160122 23:10:28.044" starttime="20160122 23:10:28.003" status="PASS"></status>
+<status endtime="20160128 02:24:38.561" starttime="20160128 02:24:38.529" status="PASS"></status>
 </kw>
 <kw library="TicTacToeKeywords" name="Mark Location">
 <arguments>
 <arg>1</arg>
 <arg>1</arg>
 </arguments>
-<status endtime="20160122 23:10:28.096" starttime="20160122 23:10:28.061" status="PASS"></status>
+<status endtime="20160128 02:24:38.592" starttime="20160128 02:24:38.576" status="PASS"></status>
 </kw>
 <kw name="Check Location">
 <arguments>
@@ -26,8 +26,8 @@
 <assign>
 <var>${m}</var>
 </assign>
-<msg level="INFO" timestamp="20160122 23:10:28.210">${m} = X</msg>
-<status endtime="20160122 23:10:28.217" starttime="20160122 23:10:28.154" status="PASS"></status>
+<msg level="INFO" timestamp="20160128 02:24:38.639">${m} = X</msg>
+<status endtime="20160128 02:24:38.654" starttime="20160128 02:24:38.623" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Should Be Equal">
 <doc>Fails if the given objects are unequal.</doc>
@@ -35,16 +35,16 @@
 <arg>${m}</arg>
 <arg>${mark}</arg>
 </arguments>
-<status endtime="20160122 23:10:28.260" starttime="20160122 23:10:28.225" status="PASS"></status>
+<status endtime="20160128 02:24:38.686" starttime="20160128 02:24:38.654" status="PASS"></status>
 </kw>
-<status endtime="20160122 23:10:28.267" starttime="20160122 23:10:28.104" status="PASS"></status>
+<status endtime="20160128 02:24:38.686" starttime="20160128 02:24:38.592" status="PASS"></status>
 </kw>
 <kw library="TicTacToeKeywords" name="Mark Location">
 <arguments>
 <arg>0</arg>
 <arg>1</arg>
 </arguments>
-<status endtime="20160122 23:10:28.314" starttime="20160122 23:10:28.286" status="PASS"></status>
+<status endtime="20160128 02:24:38.701" starttime="20160128 02:24:38.701" status="PASS"></status>
 </kw>
 <kw name="Check Location">
 <arguments>
@@ -60,8 +60,8 @@
 <assign>
 <var>${m}</var>
 </assign>
-<msg level="INFO" timestamp="20160122 23:10:28.431">${m} = O</msg>
-<status endtime="20160122 23:10:28.461" starttime="20160122 23:10:28.360" status="PASS"></status>
+<msg level="INFO" timestamp="20160128 02:24:38.764">${m} = O</msg>
+<status endtime="20160128 02:24:38.764" starttime="20160128 02:24:38.733" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Should Be Equal">
 <doc>Fails if the given objects are unequal.</doc>
@@ -69,16 +69,16 @@
 <arg>${m}</arg>
 <arg>${mark}</arg>
 </arguments>
-<status endtime="20160122 23:10:28.646" starttime="20160122 23:10:28.576" status="PASS"></status>
+<status endtime="20160128 02:24:38.795" starttime="20160128 02:24:38.764" status="PASS"></status>
 </kw>
-<status endtime="20160122 23:10:28.655" starttime="20160122 23:10:28.326" status="PASS"></status>
+<status endtime="20160128 02:24:38.795" starttime="20160128 02:24:38.717" status="PASS"></status>
 </kw>
 <kw library="TicTacToeKeywords" name="Mark Location">
 <arguments>
 <arg>0</arg>
 <arg>0</arg>
 </arguments>
-<status endtime="20160122 23:10:28.686" starttime="20160122 23:10:28.667" status="PASS"></status>
+<status endtime="20160128 02:24:38.826" starttime="20160128 02:24:38.811" status="PASS"></status>
 </kw>
 <kw name="Check Location">
 <arguments>
@@ -94,8 +94,8 @@
 <assign>
 <var>${m}</var>
 </assign>
-<msg level="INFO" timestamp="20160122 23:10:28.770">${m} = X</msg>
-<status endtime="20160122 23:10:28.779" starttime="20160122 23:10:28.729" status="PASS"></status>
+<msg level="INFO" timestamp="20160128 02:24:38.920">${m} = X</msg>
+<status endtime="20160128 02:24:38.936" starttime="20160128 02:24:38.904" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Should Be Equal">
 <doc>Fails if the given objects are unequal.</doc>
@@ -103,16 +103,16 @@
 <arg>${m}</arg>
 <arg>${mark}</arg>
 </arguments>
-<status endtime="20160122 23:10:28.847" starttime="20160122 23:10:28.796" status="PASS"></status>
+<status endtime="20160128 02:24:38.967" starttime="20160128 02:24:38.936" status="PASS"></status>
 </kw>
-<status endtime="20160122 23:10:28.856" starttime="20160122 23:10:28.695" status="PASS"></status>
+<status endtime="20160128 02:24:38.967" starttime="20160128 02:24:38.873" status="PASS"></status>
 </kw>
 <kw library="TicTacToeKeywords" name="Mark Location">
 <arguments>
 <arg>0</arg>
 <arg>2</arg>
 </arguments>
-<status endtime="20160122 23:10:28.942" starttime="20160122 23:10:28.877" status="PASS"></status>
+<status endtime="20160128 02:24:39.014" starttime="20160128 02:24:38.983" status="PASS"></status>
 </kw>
 <kw name="Check Location">
 <arguments>
@@ -128,8 +128,8 @@
 <assign>
 <var>${m}</var>
 </assign>
-<msg level="INFO" timestamp="20160122 23:10:29.046">${m} = O</msg>
-<status endtime="20160122 23:10:29.050" starttime="20160122 23:10:29.003" status="PASS"></status>
+<msg level="INFO" timestamp="20160128 02:24:39.076">${m} = O</msg>
+<status endtime="20160128 02:24:39.076" starttime="20160128 02:24:39.045" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Should Be Equal">
 <doc>Fails if the given objects are unequal.</doc>
@@ -137,16 +137,16 @@
 <arg>${m}</arg>
 <arg>${mark}</arg>
 </arguments>
-<status endtime="20160122 23:10:29.087" starttime="20160122 23:10:29.066" status="PASS"></status>
+<status endtime="20160128 02:24:39.108" starttime="20160128 02:24:39.092" status="PASS"></status>
 </kw>
-<status endtime="20160122 23:10:29.129" starttime="20160122 23:10:28.947" status="PASS"></status>
+<status endtime="20160128 02:24:39.108" starttime="20160128 02:24:39.029" status="PASS"></status>
 </kw>
 <kw library="TicTacToeKeywords" name="Mark Location">
 <arguments>
 <arg>2</arg>
 <arg>2</arg>
 </arguments>
-<status endtime="20160122 23:10:29.181" starttime="20160122 23:10:29.159" status="PASS"></status>
+<status endtime="20160128 02:24:39.139" starttime="20160128 02:24:39.123" status="PASS"></status>
 </kw>
 <kw name="Check Location">
 <arguments>
@@ -162,8 +162,8 @@
 <assign>
 <var>${m}</var>
 </assign>
-<msg level="INFO" timestamp="20160122 23:10:29.369">${m} = X</msg>
-<status endtime="20160122 23:10:29.372" starttime="20160122 23:10:29.242" status="PASS"></status>
+<msg level="INFO" timestamp="20160128 02:24:39.186">${m} = X</msg>
+<status endtime="20160128 02:24:39.186" starttime="20160128 02:24:39.170" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Should Be Equal">
 <doc>Fails if the given objects are unequal.</doc>
@@ -171,9 +171,9 @@
 <arg>${m}</arg>
 <arg>${mark}</arg>
 </arguments>
-<status endtime="20160122 23:10:29.431" starttime="20160122 23:10:29.380" status="PASS"></status>
+<status endtime="20160128 02:24:39.217" starttime="20160128 02:24:39.186" status="PASS"></status>
 </kw>
-<status endtime="20160122 23:10:29.549" starttime="20160122 23:10:29.193" status="PASS"></status>
+<status endtime="20160128 02:24:39.217" starttime="20160128 02:24:39.139" status="PASS"></status>
 </kw>
 <kw name="Winner Should Be">
 <arguments>
@@ -183,8 +183,8 @@
 <assign>
 <var>${m}</var>
 </assign>
-<msg level="INFO" timestamp="20160122 23:10:29.668">${m} = X</msg>
-<status endtime="20160122 23:10:29.668" starttime="20160122 23:10:29.652" status="PASS"></status>
+<msg level="INFO" timestamp="20160128 02:24:39.279">${m} = X</msg>
+<status endtime="20160128 02:24:39.279" starttime="20160128 02:24:39.248" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Should Be Equal">
 <doc>Fails if the given objects are unequal.</doc>
@@ -192,22 +192,22 @@
 <arg>${m}</arg>
 <arg>${mark}</arg>
 </arguments>
-<status endtime="20160122 23:10:29.699" starttime="20160122 23:10:29.683" status="PASS"></status>
+<status endtime="20160128 02:24:39.311" starttime="20160128 02:24:39.279" status="PASS"></status>
 </kw>
-<status endtime="20160122 23:10:29.714" starttime="20160122 23:10:29.614" status="PASS"></status>
+<status endtime="20160128 02:24:39.311" starttime="20160128 02:24:39.217" status="PASS"></status>
 </kw>
-<status critical="yes" endtime="20160122 23:10:29.714" starttime="20160122 23:10:27.679" status="PASS"></status>
+<status critical="yes" endtime="20160128 02:24:39.326" starttime="20160128 02:24:38.498" status="PASS"></status>
 </test>
 <test name="Win Horizontally as O" id="s1-t2">
 <kw library="TicTacToeKeywords" name="Start New Game">
-<status endtime="20160122 23:10:29.816" starttime="20160122 23:10:29.761" status="PASS"></status>
+<status endtime="20160128 02:24:39.373" starttime="20160128 02:24:39.358" status="PASS"></status>
 </kw>
 <kw library="TicTacToeKeywords" name="Mark Location">
 <arguments>
 <arg>1</arg>
 <arg>1</arg>
 </arguments>
-<status endtime="20160122 23:10:29.838" starttime="20160122 23:10:29.824" status="PASS"></status>
+<status endtime="20160128 02:24:39.389" starttime="20160128 02:24:39.389" status="PASS"></status>
 </kw>
 <kw name="Check Location">
 <arguments>
@@ -223,8 +223,8 @@
 <assign>
 <var>${m}</var>
 </assign>
-<msg level="INFO" timestamp="20160122 23:10:29.893">${m} = X</msg>
-<status endtime="20160122 23:10:29.895" starttime="20160122 23:10:29.869" status="PASS"></status>
+<msg level="INFO" timestamp="20160128 02:24:39.436">${m} = X</msg>
+<status endtime="20160128 02:24:39.451" starttime="20160128 02:24:39.420" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Should Be Equal">
 <doc>Fails if the given objects are unequal.</doc>
@@ -232,16 +232,16 @@
 <arg>${m}</arg>
 <arg>${mark}</arg>
 </arguments>
-<status endtime="20160122 23:10:29.920" starttime="20160122 23:10:29.901" status="PASS"></status>
+<status endtime="20160128 02:24:39.467" starttime="20160128 02:24:39.451" status="PASS"></status>
 </kw>
-<status endtime="20160122 23:10:29.950" starttime="20160122 23:10:29.845" status="PASS"></status>
+<status endtime="20160128 02:24:39.483" starttime="20160128 02:24:39.404" status="PASS"></status>
 </kw>
 <kw library="TicTacToeKeywords" name="Mark Location">
 <arguments>
 <arg>2</arg>
 <arg>0</arg>
 </arguments>
-<status endtime="20160122 23:10:29.973" starttime="20160122 23:10:29.962" status="PASS"></status>
+<status endtime="20160128 02:24:39.529" starttime="20160128 02:24:39.483" status="PASS"></status>
 </kw>
 <kw name="Check Location">
 <arguments>
@@ -257,8 +257,8 @@
 <assign>
 <var>${m}</var>
 </assign>
-<msg level="INFO" timestamp="20160122 23:10:30.025">${m} = O</msg>
-<status endtime="20160122 23:10:30.027" starttime="20160122 23:10:30.009" status="PASS"></status>
+<msg level="INFO" timestamp="20160128 02:24:39.576">${m} = O</msg>
+<status endtime="20160128 02:24:39.576" starttime="20160128 02:24:39.545" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Should Be Equal">
 <doc>Fails if the given objects are unequal.</doc>
@@ -266,16 +266,16 @@
 <arg>${m}</arg>
 <arg>${mark}</arg>
 </arguments>
-<status endtime="20160122 23:10:30.073" starttime="20160122 23:10:30.036" status="PASS"></status>
+<status endtime="20160128 02:24:39.608" starttime="20160128 02:24:39.576" status="PASS"></status>
 </kw>
-<status endtime="20160122 23:10:30.088" starttime="20160122 23:10:29.985" status="PASS"></status>
+<status endtime="20160128 02:24:39.623" starttime="20160128 02:24:39.529" status="PASS"></status>
 </kw>
 <kw library="TicTacToeKeywords" name="Mark Location">
 <arguments>
 <arg>0</arg>
 <arg>0</arg>
 </arguments>
-<status endtime="20160122 23:10:30.108" starttime="20160122 23:10:30.096" status="PASS"></status>
+<status endtime="20160128 02:24:39.639" starttime="20160128 02:24:39.623" status="PASS"></status>
 </kw>
 <kw name="Check Location">
 <arguments>
@@ -291,8 +291,8 @@
 <assign>
 <var>${m}</var>
 </assign>
-<msg level="INFO" timestamp="20160122 23:10:30.156">${m} = X</msg>
-<status endtime="20160122 23:10:30.161" starttime="20160122 23:10:30.138" status="PASS"></status>
+<msg level="INFO" timestamp="20160128 02:24:39.701">${m} = X</msg>
+<status endtime="20160128 02:24:39.701" starttime="20160128 02:24:39.670" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Should Be Equal">
 <doc>Fails if the given objects are unequal.</doc>
@@ -300,16 +300,16 @@
 <arg>${m}</arg>
 <arg>${mark}</arg>
 </arguments>
-<status endtime="20160122 23:10:30.184" starttime="20160122 23:10:30.166" status="PASS"></status>
+<status endtime="20160128 02:24:39.733" starttime="20160128 02:24:39.701" status="PASS"></status>
 </kw>
-<status endtime="20160122 23:10:30.192" starttime="20160122 23:10:30.117" status="PASS"></status>
+<status endtime="20160128 02:24:39.733" starttime="20160128 02:24:39.654" status="PASS"></status>
 </kw>
 <kw library="TicTacToeKeywords" name="Mark Location">
 <arguments>
 <arg>2</arg>
 <arg>2</arg>
 </arguments>
-<status endtime="20160122 23:10:30.208" starttime="20160122 23:10:30.198" status="PASS"></status>
+<status endtime="20160128 02:24:39.748" starttime="20160128 02:24:39.733" status="PASS"></status>
 </kw>
 <kw name="Check Location">
 <arguments>
@@ -325,8 +325,8 @@
 <assign>
 <var>${m}</var>
 </assign>
-<msg level="INFO" timestamp="20160122 23:10:30.255">${m} = O</msg>
-<status endtime="20160122 23:10:30.255" starttime="20160122 23:10:30.224" status="PASS"></status>
+<msg level="INFO" timestamp="20160128 02:24:39.795">${m} = O</msg>
+<status endtime="20160128 02:24:39.811" starttime="20160128 02:24:39.780" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Should Be Equal">
 <doc>Fails if the given objects are unequal.</doc>
@@ -334,16 +334,16 @@
 <arg>${m}</arg>
 <arg>${mark}</arg>
 </arguments>
-<status endtime="20160122 23:10:30.271" starttime="20160122 23:10:30.255" status="PASS"></status>
+<status endtime="20160128 02:24:39.826" starttime="20160128 02:24:39.811" status="PASS"></status>
 </kw>
-<status endtime="20160122 23:10:30.287" starttime="20160122 23:10:30.208" status="PASS"></status>
+<status endtime="20160128 02:24:39.826" starttime="20160128 02:24:39.764" status="PASS"></status>
 </kw>
 <kw library="TicTacToeKeywords" name="Mark Location">
 <arguments>
 <arg>0</arg>
 <arg>2</arg>
 </arguments>
-<status endtime="20160122 23:10:30.302" starttime="20160122 23:10:30.287" status="PASS"></status>
+<status endtime="20160128 02:24:39.842" starttime="20160128 02:24:39.842" status="PASS"></status>
 </kw>
 <kw name="Check Location">
 <arguments>
@@ -359,8 +359,8 @@
 <assign>
 <var>${m}</var>
 </assign>
-<msg level="INFO" timestamp="20160122 23:10:30.349">${m} = X</msg>
-<status endtime="20160122 23:10:30.349" starttime="20160122 23:10:30.318" status="PASS"></status>
+<msg level="INFO" timestamp="20160128 02:24:40.030">${m} = X</msg>
+<status endtime="20160128 02:24:40.030" starttime="20160128 02:24:39.873" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Should Be Equal">
 <doc>Fails if the given objects are unequal.</doc>
@@ -368,16 +368,16 @@
 <arg>${m}</arg>
 <arg>${mark}</arg>
 </arguments>
-<status endtime="20160122 23:10:30.365" starttime="20160122 23:10:30.349" status="PASS"></status>
+<status endtime="20160128 02:24:40.061" starttime="20160128 02:24:40.045" status="PASS"></status>
 </kw>
-<status endtime="20160122 23:10:30.380" starttime="20160122 23:10:30.302" status="PASS"></status>
+<status endtime="20160128 02:24:40.076" starttime="20160128 02:24:39.858" status="PASS"></status>
 </kw>
 <kw library="TicTacToeKeywords" name="Mark Location">
 <arguments>
 <arg>2</arg>
 <arg>1</arg>
 </arguments>
-<status endtime="20160122 23:10:30.396" starttime="20160122 23:10:30.380" status="PASS"></status>
+<status endtime="20160128 02:24:40.092" starttime="20160128 02:24:40.076" status="PASS"></status>
 </kw>
 <kw name="Check Location">
 <arguments>
@@ -393,8 +393,8 @@
 <assign>
 <var>${m}</var>
 </assign>
-<msg level="INFO" timestamp="20160122 23:10:30.443">${m} = O</msg>
-<status endtime="20160122 23:10:30.443" starttime="20160122 23:10:30.412" status="PASS"></status>
+<msg level="INFO" timestamp="20160128 02:24:40.139">${m} = O</msg>
+<status endtime="20160128 02:24:40.139" starttime="20160128 02:24:40.108" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Should Be Equal">
 <doc>Fails if the given objects are unequal.</doc>
@@ -402,9 +402,9 @@
 <arg>${m}</arg>
 <arg>${mark}</arg>
 </arguments>
-<status endtime="20160122 23:10:30.459" starttime="20160122 23:10:30.443" status="PASS"></status>
+<status endtime="20160128 02:24:40.155" starttime="20160128 02:24:40.139" status="PASS"></status>
 </kw>
-<status endtime="20160122 23:10:30.474" starttime="20160122 23:10:30.396" status="PASS"></status>
+<status endtime="20160128 02:24:40.155" starttime="20160128 02:24:40.092" status="PASS"></status>
 </kw>
 <kw name="Winner Should Be">
 <arguments>
@@ -414,8 +414,8 @@
 <assign>
 <var>${m}</var>
 </assign>
-<msg level="INFO" timestamp="20160122 23:10:30.505">${m} = O</msg>
-<status endtime="20160122 23:10:30.505" starttime="20160122 23:10:30.490" status="PASS"></status>
+<msg level="INFO" timestamp="20160128 02:24:40.186">${m} = O</msg>
+<status endtime="20160128 02:24:40.186" starttime="20160128 02:24:40.170" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Should Be Equal">
 <doc>Fails if the given objects are unequal.</doc>
@@ -423,22 +423,22 @@
 <arg>${m}</arg>
 <arg>${mark}</arg>
 </arguments>
-<status endtime="20160122 23:10:30.521" starttime="20160122 23:10:30.505" status="PASS"></status>
+<status endtime="20160128 02:24:40.201" starttime="20160128 02:24:40.186" status="PASS"></status>
 </kw>
-<status endtime="20160122 23:10:30.537" starttime="20160122 23:10:30.474" status="PASS"></status>
+<status endtime="20160128 02:24:40.201" starttime="20160128 02:24:40.170" status="PASS"></status>
 </kw>
-<status critical="yes" endtime="20160122 23:10:30.537" starttime="20160122 23:10:29.730" status="PASS"></status>
+<status critical="yes" endtime="20160128 02:24:40.217" starttime="20160128 02:24:39.342" status="PASS"></status>
 </test>
 <test name="Force a Tie" id="s1-t3">
 <kw library="TicTacToeKeywords" name="Start New Game">
-<status endtime="20160122 23:10:30.568" starttime="20160122 23:10:30.552" status="PASS"></status>
+<status endtime="20160128 02:24:40.248" starttime="20160128 02:24:40.233" status="PASS"></status>
 </kw>
 <kw library="TicTacToeKeywords" name="Mark Location">
 <arguments>
 <arg>1</arg>
 <arg>1</arg>
 </arguments>
-<status endtime="20160122 23:10:30.584" starttime="20160122 23:10:30.584" status="PASS"></status>
+<status endtime="20160128 02:24:40.264" starttime="20160128 02:24:40.248" status="PASS"></status>
 </kw>
 <kw name="Check Location">
 <arguments>
@@ -454,8 +454,8 @@
 <assign>
 <var>${m}</var>
 </assign>
-<msg level="INFO" timestamp="20160122 23:10:30.630">${m} = X</msg>
-<status endtime="20160122 23:10:30.630" starttime="20160122 23:10:30.615" status="PASS"></status>
+<msg level="INFO" timestamp="20160128 02:24:40.311">${m} = X</msg>
+<status endtime="20160128 02:24:40.311" starttime="20160128 02:24:40.295" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Should Be Equal">
 <doc>Fails if the given objects are unequal.</doc>
@@ -463,16 +463,16 @@
 <arg>${m}</arg>
 <arg>${mark}</arg>
 </arguments>
-<status endtime="20160122 23:10:30.662" starttime="20160122 23:10:30.630" status="PASS"></status>
+<status endtime="20160128 02:24:40.342" starttime="20160128 02:24:40.311" status="PASS"></status>
 </kw>
-<status endtime="20160122 23:10:30.662" starttime="20160122 23:10:30.599" status="PASS"></status>
+<status endtime="20160128 02:24:40.342" starttime="20160128 02:24:40.264" status="PASS"></status>
 </kw>
 <kw library="TicTacToeKeywords" name="Mark Location">
 <arguments>
 <arg>0</arg>
 <arg>0</arg>
 </arguments>
-<status endtime="20160122 23:10:30.677" starttime="20160122 23:10:30.662" status="PASS"></status>
+<status endtime="20160128 02:24:40.358" starttime="20160128 02:24:40.358" status="PASS"></status>
 </kw>
 <kw name="Check Location">
 <arguments>
@@ -488,8 +488,8 @@
 <assign>
 <var>${m}</var>
 </assign>
-<msg level="INFO" timestamp="20160122 23:10:30.709">${m} = O</msg>
-<status endtime="20160122 23:10:30.709" starttime="20160122 23:10:30.693" status="PASS"></status>
+<msg level="INFO" timestamp="20160128 02:24:40.405">${m} = O</msg>
+<status endtime="20160128 02:24:40.405" starttime="20160128 02:24:40.389" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Should Be Equal">
 <doc>Fails if the given objects are unequal.</doc>
@@ -497,16 +497,16 @@
 <arg>${m}</arg>
 <arg>${mark}</arg>
 </arguments>
-<status endtime="20160122 23:10:30.740" starttime="20160122 23:10:30.724" status="PASS"></status>
+<status endtime="20160128 02:24:40.436" starttime="20160128 02:24:40.420" status="PASS"></status>
 </kw>
-<status endtime="20160122 23:10:30.740" starttime="20160122 23:10:30.677" status="PASS"></status>
+<status endtime="20160128 02:24:40.436" starttime="20160128 02:24:40.373" status="PASS"></status>
 </kw>
 <kw library="TicTacToeKeywords" name="Mark Location">
 <arguments>
 <arg>2</arg>
 <arg>0</arg>
 </arguments>
-<status endtime="20160122 23:10:30.755" starttime="20160122 23:10:30.755" status="PASS"></status>
+<status endtime="20160128 02:24:40.451" starttime="20160128 02:24:40.436" status="PASS"></status>
 </kw>
 <kw name="Check Location">
 <arguments>
@@ -522,8 +522,8 @@
 <assign>
 <var>${m}</var>
 </assign>
-<msg level="INFO" timestamp="20160122 23:10:30.808">${m} = X</msg>
-<status endtime="20160122 23:10:30.810" starttime="20160122 23:10:30.787" status="PASS"></status>
+<msg level="INFO" timestamp="20160128 02:24:40.498">${m} = X</msg>
+<status endtime="20160128 02:24:40.498" starttime="20160128 02:24:40.467" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Should Be Equal">
 <doc>Fails if the given objects are unequal.</doc>
@@ -531,16 +531,16 @@
 <arg>${m}</arg>
 <arg>${mark}</arg>
 </arguments>
-<status endtime="20160122 23:10:30.828" starttime="20160122 23:10:30.812" status="PASS"></status>
+<status endtime="20160128 02:24:40.514" starttime="20160128 02:24:40.498" status="PASS"></status>
 </kw>
-<status endtime="20160122 23:10:30.870" starttime="20160122 23:10:30.771" status="PASS"></status>
+<status endtime="20160128 02:24:40.514" starttime="20160128 02:24:40.451" status="PASS"></status>
 </kw>
 <kw library="TicTacToeKeywords" name="Mark Location">
 <arguments>
 <arg>0</arg>
 <arg>2</arg>
 </arguments>
-<status endtime="20160122 23:10:30.900" starttime="20160122 23:10:30.890" status="PASS"></status>
+<status endtime="20160128 02:24:40.530" starttime="20160128 02:24:40.530" status="PASS"></status>
 </kw>
 <kw name="Check Location">
 <arguments>
@@ -556,8 +556,8 @@
 <assign>
 <var>${m}</var>
 </assign>
-<msg level="INFO" timestamp="20160122 23:10:30.945">${m} = O</msg>
-<status endtime="20160122 23:10:30.947" starttime="20160122 23:10:30.927" status="PASS"></status>
+<msg level="INFO" timestamp="20160128 02:24:40.576">${m} = O</msg>
+<status endtime="20160128 02:24:40.576" starttime="20160128 02:24:40.561" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Should Be Equal">
 <doc>Fails if the given objects are unequal.</doc>
@@ -565,16 +565,16 @@
 <arg>${m}</arg>
 <arg>${mark}</arg>
 </arguments>
-<status endtime="20160122 23:10:30.970" starttime="20160122 23:10:30.953" status="PASS"></status>
+<status endtime="20160128 02:24:40.608" starttime="20160128 02:24:40.576" status="PASS"></status>
 </kw>
-<status endtime="20160122 23:10:30.975" starttime="20160122 23:10:30.906" status="PASS"></status>
+<status endtime="20160128 02:24:40.608" starttime="20160128 02:24:40.545" status="PASS"></status>
 </kw>
 <kw library="TicTacToeKeywords" name="Mark Location">
 <arguments>
 <arg>0</arg>
 <arg>1</arg>
 </arguments>
-<status endtime="20160122 23:10:30.995" starttime="20160122 23:10:30.982" status="PASS"></status>
+<status endtime="20160128 02:24:40.623" starttime="20160128 02:24:40.608" status="PASS"></status>
 </kw>
 <kw name="Check Location">
 <arguments>
@@ -590,8 +590,8 @@
 <assign>
 <var>${m}</var>
 </assign>
-<msg level="INFO" timestamp="20160122 23:10:31.149">${m} = X</msg>
-<status endtime="20160122 23:10:31.151" starttime="20160122 23:10:31.105" status="PASS"></status>
+<msg level="INFO" timestamp="20160128 02:24:40.670">${m} = X</msg>
+<status endtime="20160128 02:24:40.670" starttime="20160128 02:24:40.639" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Should Be Equal">
 <doc>Fails if the given objects are unequal.</doc>
@@ -599,16 +599,16 @@
 <arg>${m}</arg>
 <arg>${mark}</arg>
 </arguments>
-<status endtime="20160122 23:10:31.198" starttime="20160122 23:10:31.156" status="PASS"></status>
+<status endtime="20160128 02:24:40.686" starttime="20160128 02:24:40.670" status="PASS"></status>
 </kw>
-<status endtime="20160122 23:10:31.203" starttime="20160122 23:10:31.077" status="PASS"></status>
+<status endtime="20160128 02:24:40.701" starttime="20160128 02:24:40.623" status="PASS"></status>
 </kw>
 <kw library="TicTacToeKeywords" name="Mark Location">
 <arguments>
 <arg>2</arg>
 <arg>1</arg>
 </arguments>
-<status endtime="20160122 23:10:31.227" starttime="20160122 23:10:31.217" status="PASS"></status>
+<status endtime="20160128 02:24:40.717" starttime="20160128 02:24:40.701" status="PASS"></status>
 </kw>
 <kw name="Check Location">
 <arguments>
@@ -624,8 +624,8 @@
 <assign>
 <var>${m}</var>
 </assign>
-<msg level="INFO" timestamp="20160122 23:10:31.294">${m} = O</msg>
-<status endtime="20160122 23:10:31.299" starttime="20160122 23:10:31.273" status="PASS"></status>
+<msg level="INFO" timestamp="20160128 02:24:40.748">${m} = O</msg>
+<status endtime="20160128 02:24:40.748" starttime="20160128 02:24:40.733" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Should Be Equal">
 <doc>Fails if the given objects are unequal.</doc>
@@ -633,16 +633,16 @@
 <arg>${m}</arg>
 <arg>${mark}</arg>
 </arguments>
-<status endtime="20160122 23:10:31.331" starttime="20160122 23:10:31.306" status="PASS"></status>
+<status endtime="20160128 02:24:40.780" starttime="20160128 02:24:40.764" status="PASS"></status>
 </kw>
-<status endtime="20160122 23:10:31.340" starttime="20160122 23:10:31.232" status="PASS"></status>
+<status endtime="20160128 02:24:40.780" starttime="20160128 02:24:40.717" status="PASS"></status>
 </kw>
 <kw library="TicTacToeKeywords" name="Mark Location">
 <arguments>
 <arg>1</arg>
 <arg>2</arg>
 </arguments>
-<status endtime="20160122 23:10:31.362" starttime="20160122 23:10:31.352" status="PASS"></status>
+<status endtime="20160128 02:24:40.795" starttime="20160128 02:24:40.780" status="PASS"></status>
 </kw>
 <kw name="Check Location">
 <arguments>
@@ -658,8 +658,8 @@
 <assign>
 <var>${m}</var>
 </assign>
-<msg level="INFO" timestamp="20160122 23:10:31.389">${m} = X</msg>
-<status endtime="20160122 23:10:31.417" starttime="20160122 23:10:31.381" status="PASS"></status>
+<msg level="INFO" timestamp="20160128 02:24:40.826">${m} = X</msg>
+<status endtime="20160128 02:24:40.842" starttime="20160128 02:24:40.811" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Should Be Equal">
 <doc>Fails if the given objects are unequal.</doc>
@@ -667,16 +667,16 @@
 <arg>${m}</arg>
 <arg>${mark}</arg>
 </arguments>
-<status endtime="20160122 23:10:31.446" starttime="20160122 23:10:31.431" status="PASS"></status>
+<status endtime="20160128 02:24:40.858" starttime="20160128 02:24:40.842" status="PASS"></status>
 </kw>
-<status endtime="20160122 23:10:31.450" starttime="20160122 23:10:31.366" status="PASS"></status>
+<status endtime="20160128 02:24:40.858" starttime="20160128 02:24:40.795" status="PASS"></status>
 </kw>
 <kw library="TicTacToeKeywords" name="Mark Location">
 <arguments>
 <arg>1</arg>
 <arg>0</arg>
 </arguments>
-<status endtime="20160122 23:10:31.459" starttime="20160122 23:10:31.457" status="PASS"></status>
+<status endtime="20160128 02:24:40.873" starttime="20160128 02:24:40.858" status="PASS"></status>
 </kw>
 <kw name="Check Location">
 <arguments>
@@ -692,8 +692,8 @@
 <assign>
 <var>${m}</var>
 </assign>
-<msg level="INFO" timestamp="20160122 23:10:31.490">${m} = O</msg>
-<status endtime="20160122 23:10:31.490" starttime="20160122 23:10:31.474" status="PASS"></status>
+<msg level="INFO" timestamp="20160128 02:24:40.920">${m} = O</msg>
+<status endtime="20160128 02:24:40.920" starttime="20160128 02:24:40.905" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Should Be Equal">
 <doc>Fails if the given objects are unequal.</doc>
@@ -701,16 +701,16 @@
 <arg>${m}</arg>
 <arg>${mark}</arg>
 </arguments>
-<status endtime="20160122 23:10:31.506" starttime="20160122 23:10:31.506" status="PASS"></status>
+<status endtime="20160128 02:24:40.936" starttime="20160128 02:24:40.920" status="PASS"></status>
 </kw>
-<status endtime="20160122 23:10:31.522" starttime="20160122 23:10:31.459" status="PASS"></status>
+<status endtime="20160128 02:24:40.951" starttime="20160128 02:24:40.873" status="PASS"></status>
 </kw>
 <kw library="TicTacToeKeywords" name="Mark Location">
 <arguments>
 <arg>2</arg>
 <arg>2</arg>
 </arguments>
-<status endtime="20160122 23:10:31.534" starttime="20160122 23:10:31.527" status="PASS"></status>
+<status endtime="20160128 02:24:40.967" starttime="20160128 02:24:40.951" status="PASS"></status>
 </kw>
 <kw name="Check Location">
 <arguments>
@@ -726,8 +726,8 @@
 <assign>
 <var>${m}</var>
 </assign>
-<msg level="INFO" timestamp="20160122 23:10:31.565">${m} = X</msg>
-<status endtime="20160122 23:10:31.565" starttime="20160122 23:10:31.550" status="PASS"></status>
+<msg level="INFO" timestamp="20160128 02:24:40.998">${m} = X</msg>
+<status endtime="20160128 02:24:40.998" starttime="20160128 02:24:40.983" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Should Be Equal">
 <doc>Fails if the given objects are unequal.</doc>
@@ -735,9 +735,9 @@
 <arg>${m}</arg>
 <arg>${mark}</arg>
 </arguments>
-<status endtime="20160122 23:10:31.596" starttime="20160122 23:10:31.565" status="PASS"></status>
+<status endtime="20160128 02:24:41.030" starttime="20160128 02:24:41.014" status="PASS"></status>
 </kw>
-<status endtime="20160122 23:10:31.596" starttime="20160122 23:10:31.534" status="PASS"></status>
+<status endtime="20160128 02:24:41.030" starttime="20160128 02:24:40.967" status="PASS"></status>
 </kw>
 <kw name="Winner Should Be">
 <arguments>
@@ -747,8 +747,8 @@
 <assign>
 <var>${m}</var>
 </assign>
-<msg level="INFO" timestamp="20160122 23:10:31.628">${m} = TIE</msg>
-<status endtime="20160122 23:10:31.628" starttime="20160122 23:10:31.612" status="PASS"></status>
+<msg level="INFO" timestamp="20160128 02:24:41.061">${m} = TIE</msg>
+<status endtime="20160128 02:24:41.061" starttime="20160128 02:24:41.045" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Should Be Equal">
 <doc>Fails if the given objects are unequal.</doc>
@@ -756,13 +756,13 @@
 <arg>${m}</arg>
 <arg>${mark}</arg>
 </arguments>
-<status endtime="20160122 23:10:31.675" starttime="20160122 23:10:31.643" status="PASS"></status>
+<status endtime="20160128 02:24:41.076" starttime="20160128 02:24:41.061" status="PASS"></status>
 </kw>
-<status endtime="20160122 23:10:31.675" starttime="20160122 23:10:31.596" status="PASS"></status>
+<status endtime="20160128 02:24:41.092" starttime="20160128 02:24:41.030" status="PASS"></status>
 </kw>
-<status critical="yes" endtime="20160122 23:10:31.690" starttime="20160122 23:10:30.552" status="PASS"></status>
+<status critical="yes" endtime="20160128 02:24:41.092" starttime="20160128 02:24:40.217" status="PASS"></status>
 </test>
-<status endtime="20160122 23:10:31.806" starttime="20160122 23:10:24.575" status="PASS"></status>
+<status endtime="20160128 02:24:41.139" starttime="20160128 02:24:36.920" status="PASS"></status>
 </suite>
 <statistics>
 <total>
