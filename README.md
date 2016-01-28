@@ -1,6 +1,6 @@
 Tic Tac Toe
 ===========
-Barry Weaver
+Author: Barry Weaver
 
 This is a Tic Tac Toe GUI game. I created a model in the first project
 that had a terminal-based view and controller. I have kept the same 
