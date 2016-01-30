@@ -53,7 +53,7 @@ public class TicTacToeModel{
 		else if(result == Result.TIE)
 			r = "TIE";
 		else
-			r = "NONE";
+			r = "";
 		
 		return r;
 	}

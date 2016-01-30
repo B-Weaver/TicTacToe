@@ -7,9 +7,6 @@ public class TicTacToeKeywords {
 	public void startNewGame() {
 		game = new TicTacToeModel();
 	}
-	public void startApplication(){
-		TicTacToe gameApp = new TicTacToe();
-	}
 	
 	public void markLocation(int row, int col) {
 		game.setMark(row, col);

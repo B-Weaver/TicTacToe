@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 2.9 (Jython 2.7.0 on java1.8.0_60)" generated="20160128 02:58:24.244">
+<robot generator="Robot 2.9 (Jython 2.7.0 on java1.8.0_71)" generated="20160130 00:57:08.677">
 <suite source="C:\Users\Barry\CS310\TicTacToe\acceptance\TicTacToeGUITests.txt" name="TicTacToeGUITests" id="s1">
 <test name="Win Diagonally as X" id="s1-t1">
 <kw name="Start New Game">
@@ -7,12 +7,12 @@
 <arguments>
 <arg>edu.jsu.mcis.TicTacToe</arg>
 </arguments>
-<msg level="FAIL" timestamp="20160128 02:58:26.059">No keyword with name 'Start Application' found.</msg>
-<status endtime="20160128 02:58:26.066" starttime="20160128 02:58:26.047" status="FAIL"></status>
+<msg level="FAIL" timestamp="20160130 00:57:09.446">No keyword with name 'Start Application' found.</msg>
+<status endtime="20160130 00:57:09.449" starttime="20160130 00:57:09.443" status="FAIL"></status>
 </kw>
-<status endtime="20160128 02:58:26.078" starttime="20160128 02:58:25.939" status="FAIL"></status>
+<status endtime="20160130 00:57:09.455" starttime="20160130 00:57:09.407" status="FAIL"></status>
 </kw>
-<status critical="yes" endtime="20160128 02:58:26.086" starttime="20160128 02:58:25.914" status="FAIL">No keyword with name 'Start Application' found.</status>
+<status critical="yes" endtime="20160130 00:57:09.463" starttime="20160130 00:57:09.401" status="FAIL">No keyword with name 'Start Application' found.</status>
 </test>
 <test name="Win Horizontally as O" id="s1-t2">
 <kw name="Start New Game">
@@ -20,12 +20,12 @@
 <arguments>
 <arg>edu.jsu.mcis.TicTacToe</arg>
 </arguments>
-<msg level="FAIL" timestamp="20160128 02:58:26.318">No keyword with name 'Start Application' found.</msg>
-<status endtime="20160128 02:58:26.324" starttime="20160128 02:58:26.312" status="FAIL"></status>
+<msg level="FAIL" timestamp="20160130 00:57:09.518">No keyword with name 'Start Application' found.</msg>
+<status endtime="20160130 00:57:09.520" starttime="20160130 00:57:09.515" status="FAIL"></status>
 </kw>
-<status endtime="20160128 02:58:26.334" starttime="20160128 02:58:26.222" status="FAIL"></status>
+<status endtime="20160130 00:57:09.523" starttime="20160130 00:57:09.480" status="FAIL"></status>
 </kw>
-<status critical="yes" endtime="20160128 02:58:26.343" starttime="20160128 02:58:26.098" status="FAIL">No keyword with name 'Start Application' found.</status>
+<status critical="yes" endtime="20160130 00:57:09.527" starttime="20160130 00:57:09.472" status="FAIL">No keyword with name 'Start Application' found.</status>
 </test>
 <test name="Force a Tie" id="s1-t3">
 <kw name="Start New Game">
@@ -33,14 +33,14 @@
 <arguments>
 <arg>edu.jsu.mcis.TicTacToe</arg>
 </arguments>
-<msg level="FAIL" timestamp="20160128 02:58:26.470">No keyword with name 'Start Application' found.</msg>
-<status endtime="20160128 02:58:26.474" starttime="20160128 02:58:26.465" status="FAIL"></status>
+<msg level="FAIL" timestamp="20160130 00:57:09.585">No keyword with name 'Start Application' found.</msg>
+<status endtime="20160130 00:57:09.587" starttime="20160130 00:57:09.582" status="FAIL"></status>
 </kw>
-<status endtime="20160128 02:58:26.481" starttime="20160128 02:58:26.374" status="FAIL"></status>
+<status endtime="20160130 00:57:09.591" starttime="20160130 00:57:09.545" status="FAIL"></status>
 </kw>
-<status critical="yes" endtime="20160128 02:58:26.489" starttime="20160128 02:58:26.358" status="FAIL">No keyword with name 'Start Application' found.</status>
+<status critical="yes" endtime="20160130 00:57:09.595" starttime="20160130 00:57:09.537" status="FAIL">No keyword with name 'Start Application' found.</status>
 </test>
-<status endtime="20160128 02:58:26.518" starttime="20160128 02:58:24.311" status="FAIL"></status>
+<status endtime="20160130 00:57:09.609" starttime="20160130 00:57:08.699" status="FAIL"></status>
 </suite>
 <statistics>
 <total>
@@ -54,7 +54,7 @@
 </suite>
 </statistics>
 <errors>
-<msg level="ERROR" timestamp="20160128 02:58:25.885">Error in file 'C:\Users\Barry\CS310\TicTacToe\acceptance\TicTacToeGUITests.txt': Importing test library 'SwingLibrary' failed: ImportError: No module named SwingLibrary
+<msg level="ERROR" timestamp="20160130 00:57:09.388">Error in file 'C:\Users\Barry\CS310\TicTacToe\acceptance\TicTacToeGUITests.txt': Importing test library 'SwingLibrary' failed: ImportError: No module named SwingLibrary
 Traceback (most recent call last):
   None
 PYTHONPATH:

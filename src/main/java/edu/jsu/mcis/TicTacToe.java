@@ -6,7 +6,7 @@ import java.awt.event.*;
 import javax.swing.*;
 
 
-public class TicTacToe extends JPanel implements ActionListener {
+public class TicTacToe extends JPanel implements ActionListener{
 
 		protected TicTacToeModel game;
 		private JButton[][] gridButtons;
@@ -17,6 +17,7 @@ public class TicTacToe extends JPanel implements ActionListener {
 		private int row;
 		private int col;
 		private String[] player;
+		private boolean noWin = true;
 		
 		public TicTacToe(){
 			game = new TicTacToeModel();
@@ -52,36 +53,47 @@ public class TicTacToe extends JPanel implements ActionListener {
 			
 		}
 		
+		private void checkForWin(){
+			String r = game.resultString();
+			if(r.length() > 0){
+				noWin  = false;
+				new Thread(new Runnable(){
+					public void run(){
+						JOptionPane.showMessageDialog(null, "The winner is " + r, "Game Over", JOptionPane.INFORMATION_MESSAGE);
+					
+					}}).start();
+			}
+				
+		}
+		
 		public void actionPerformed(ActionEvent e){
 			JButton b = (JButton)e.getSource();
+			
 			int r = Integer.parseInt(b.getActionCommand().substring(0, 1));
 			int c = Integer.parseInt(b.getActionCommand().substring(1, 2));
-			
+				
 			game.setMark(r, c);
 			b.setText(game.getMark(r, c));
 			if(game.xTurn){
 				messageLabel.setText("Player X make your move");
+				checkForWin();
+				if(!noWin){
+					toggleButtons();
+					messageLabel.setText("Game Over!");
+				}
 			}
-			else
+			else{
 				messageLabel.setText("Player O make your move");
-			
-			if(game.resultString().equals("X")){
-				messageLabel.setText("Payer X WINS!");
-				disableButtons();
+				checkForWin();
+				if(!noWin){
+					toggleButtons();
+					messageLabel.setText("Game Over!");
+				}
 			}
-			
-			else if(game.resultString().equals("O")){
-				messageLabel.setText("Player O WINS!");
-				disableButtons();
-			}
-
-			else if(game.resultString().equals("TIE")){
-				messageLabel.setText("Game ends in a TIE!");
-				disableButtons();
-			}	
-			
 		}
-		 public void disableButtons(){
+		
+		
+		 public void toggleButtons(){
 			for(int i = 0; i < 3; i++){
 				for(int j = 0; j < 3; j++){
 					gridButtons[i][j].setEnabled(false);

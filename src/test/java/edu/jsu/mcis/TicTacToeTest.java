@@ -13,7 +13,7 @@ public class TicTacToeTest {
 		newGame.game.setMark(1, 1);
 		newGame.game.setMark(0, 0);
 		boolean t = false;
-		if(newGame.game.resultString().equals("NONE"))
+		if(newGame.game.resultString().equals(""))
 			t = true;
 		assertTrue(t);
 	}
@@ -72,7 +72,7 @@ public class TicTacToeTest {
 		boolean t = true;
 		newGame.setMark(1, 1);
 		String r = newGame.resultString();
-		if(!r.equals("NONE"))
+		if(!r.equals(""))
 			t = false;
 		assertTrue(t);
 	}
