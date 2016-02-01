@@ -30,6 +30,7 @@ public class TicTacToe extends JPanel implements ActionListener{
 			for(int i = 0; i < 3; i++){
 				for(int j = 0; j < 3; j++){
 					gridButtons[i][j] = new JButton(" ");
+					gridButtons[i][j].setName("Location"+i+j);
 					gridButtons[i][j].setFont(new Font("",Font.BOLD, 30));
 					gridButtons[i][j].setPreferredSize(new Dimension(75, 75));
 					gridButtons[i][j].addActionListener(this);

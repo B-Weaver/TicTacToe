@@ -3,8 +3,10 @@ import edu.jsu.mcis.*;
 public class TicTacToeKeywords {
 	
 	private TicTacToeModel game;
+	////private View gameView = new View();
 	
 	public void startNewGame() {
+		//gameModel.initBoard();
 		game = new TicTacToeModel();
 	}
 	
