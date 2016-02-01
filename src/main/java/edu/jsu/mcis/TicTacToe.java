@@ -102,8 +102,7 @@ public class TicTacToe extends JPanel implements ActionListener{
 			}
 		 }
 		
-			
-			
+
 public static void main(String[] args) {
 
 		JFrame win = new JFrame();
